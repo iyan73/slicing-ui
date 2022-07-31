@@ -1,0 +1,58 @@
+<div class="py-3 sm:py-5 sm:flex sm:items-center sm:justify-between">
+  <div class="flex justify-between items-center">
+    <button class="sm:hidden" mat-icon-button (click)="openHamburger()">
+      <mat-icon class="text-[#f4e3cf]">menu</mat-icon>
+    </button>
+
+    <a href="" class="sm:flex">
+      <span class="text-base sm:text-3xl text-[#f4e3cf]">SocialNetwork</span>
+    </a>
+
+    <div class="flex gap-3 sm:hidden">
+      <button mat-icon-button>
+        <mat-icon class="text-[#f4e3cf]">file_upload</mat-icon>
+      </button>
+      <button mat-icon-button (click)="openProfile()">
+        <mat-icon class="text-[#f4e3cf]">person</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="relative sm:hidden">
+    <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+      <svg class="w-5 h-5 text-[#953e46]" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span>
+
+    <input type="text" class="w-full py-1 pr-10 pl-4 text-[#953e46] bg-[#f4e3cf] rounded-sm" placeholder="Search">
+  </div>
+
+  <div class="hidden sm:flex gap-3">
+    <div class="relative">
+      <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+        <svg class="w-5 h-5 text-[#953e46]" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+
+      <input type="text" class="w-full py-1 pr-10 pl-4 text-[#953e46] bg-[#f4e3cf] rounded-sm" placeholder="Search">
+    </div>
+
+    <button class="px-4 py-1 font-medium tracking-wide text-[#953e46] bg-[#f4e3cf] rounded-sm flex">
+      <mat-icon>file_upload</mat-icon>
+      <span class="ml-2">Upload</span>
+    </button>
+    <button class="px-4 py-1 font-medium tracking-wide text-[#953e46] bg-[#f4e3cf] rounded-sm flex">
+      <mat-icon>person</mat-icon>
+    </button>
+    <div class="flex flex-col justify-center">
+      <span class="text-xs text-[#f4e3cf]">Washeem</span>
+      <span class="text-[10px] text-[#f4e3cf]">Arshad</span>
+    </div>
+  </div>
+</div>
